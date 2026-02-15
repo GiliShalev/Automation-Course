@@ -7,7 +7,7 @@ class TestGoogle:
         page.set_default_timeout(5000)
         page.goto("https://www.google.com/")
         page.locator("[name=q]").fill("Cat")
-        time.sleep(2)
+        time.sleep(3)
         # page.pause()
         # page.get_by_role("button", name='Google Search').nth(0).click()
         page.get_by_role("button", name='Google Search').first.click()
